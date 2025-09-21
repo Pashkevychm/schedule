@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+}
+
+header{
+    background: #FFF;
+    height: 61px;
+    box-shadow: 0px 14px 44px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-elements{
+    margin: 0 auto;
+    width: 165px;
+    height: 18px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+
+    color: #011F3A;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
