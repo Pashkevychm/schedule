@@ -1,24 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
-    <script crs="script.js"></script>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
 </head>
+
 <body>
     <header>
-        <img class='logo' src='/uploads/2023/03/Logo.png' alt='Тут має бути картинка'>
+        <img class='logo' src='https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-ba70-61f7-b2e2-ecf302b28b8d/raw?se=2025-10-05T13%3A09%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=68eb0a05-f715-546d-8e67-35e192f3c603&skoid=f71d6506-3cac-498e-b62a-67f9228033a9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-05T10%3A02%3A33Z&ske=2025-10-06T10%3A02%3A33Z&sks=b&skv=2024-08-04&sig=1d/UPbxUhIeUVHYBrSScbH92oEaoSDKRvXodUTjIYI0%3D' alt='Тут має бути картинка'>
     </header>
-    <div class="buttons">
-        <button class="btn" href="#">Понеділок</button>
-        <button class="btn" href="#">Вівторок</button>
-        <button class="btn" href="#">Середа</button>
-        <button class="btn" href="#">Четвер</button>
-        <button class="btn" href="#">П'ятниця</button>
+    <div class="container">
+        <div class="buttons">
+            <button class="btn" data-target="monday">Понеділок</button>
+            <button class="btn" data-target="tuesday">Вівторок</button>
+            <button class="btn" data-target="wednesday">Середа</button>
+            <button class="btn" data-target="thursday">Четвер</button>
+            <button class="btn" data-target="friday">П'ятниця</button>
+        </div>
+        <div class="abc" id="monday">
+            <div class="schedule">
+                <div class="add-subject">
+                    <input type="text" placeholder="Предмет">
+                    <button class="add-subject-btn"> Додати предмет </button>
+                </div>
+                <div class="subjects" id="monday-subjects">
+                    <div class="subject">
+                        <p>Предмет</p>
+                        <button class="delete-btn">Видалити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <div class="abc"></div>
+        <div class="abc" id="tuesday">
+            <div class="schedule">
+                <div class="add-subject">
+                    <input type="text" placeholder="Предмет">
+                    <button class="add-subject-btn"> Додати предмет </button>
+                </div>
+                <div class="subjects" id="tuesday-subjects">
+                    <div class="subject">
+                        <p>Предмет</p>
+                        <button class="delete-btn">Видалити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="abc" id="wednesday">
+            <div class="schedule">
+                <div class="add-subject">
+                    <input type="text" placeholder="Предмет">
+                    <button class="add-subject-btn"> Додати предмет </button>
+                </div>
+                <div class="subjects" id="wednesday-subjects">
+                    <div class="subject">
+                        <p>Предмет</p>
+                        <button class="delete-btn">Видалити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="abc" id="thursday">
+            <div class="schedule">
+                <div class="add-subject">
+                    <input type="text" placeholder="Предмет">
+                    <button class="add-subject-btn"> Додати предмет </button>
+                </div>
+                <div class="subjects" id="thursday-subjects">
+                    <div class="subject">
+                        <p>Предмет</p>
+                        <button class="delete-btn">Видалити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="abc" id="friday">
+            <div class="schedule">
+                <div class="add-subject">
+                    <input type="text" placeholder="Предмет">
+                    <button class="add-subject-btn"> Додати предмет </button>
+                </div>
+                <div class="subjects" id="friday-subjects">
+                    <div class="subject">
+                        <p>Предмет</p>
+                        <button class="delete-btn">Видалити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </body>
 </html>
