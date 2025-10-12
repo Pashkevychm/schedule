@@ -73,35 +73,49 @@ document.addEventListener('DOMContentLoaded', () => {
         const input = addArea.querySelector('input[type="text"]');
         const btn = addArea.querySelector('.add-subject-btn');
 
-        // Load saved subjects for this schedule (if any) by simulating adds so existing handlers/markup are used
+
         try {
             const saved = JSON.parse(localStorage.getItem(key) || '[]');
             if (Array.isArray(saved) && saved.length) {
                 saved.forEach(text => {
                     if (!text) return;
                     input.value = text;
-                    // trigger the same add flow that already exists in the page
+                    
                     btn.click();
                 });
                 input.value = '';
             }
         } catch (e) {
-            // ignore parse errors
+            
         }
 
-        // Save function: extract subject texts and persist
+        
         const save = () => {
             const items = Array.from(subjectsContainer.querySelectorAll('.subject p'))
                 .map(p => p.textContent.trim())
                 .filter(t => t && t !== 'Предмет');
             localStorage.setItem(key, JSON.stringify(items));
         };
-
-        // Observe changes (adds/removes) and save
         const mo = new MutationObserver(() => save());
         mo.observe(subjectsContainer, { childList: true });
-
-        // Also save immediately to ensure initial state is persisted
         save();
     });
-});
+    
+    let days = ["monday", "tuesday", "wednesday", "thursday", "friday"]
+
+    let buttons_div = document.querySelector('.buttons')
+    buttons_div.addEventListener('click', function(e){
+        let dayBtn = e.target.closest(".btn");
+        if (!dayBtn) return;
+        let day_block_id = dayBtn.dataset.target;
+        let show_block = document.getElementById(day_block_id)
+        show_block.style.display = "flex"
+
+        days.forEach(day => {
+            let block = document.getElementById(day);
+            if (block !== show_block) {
+                block.style.display = "none"
+            }
+        })
+    })
+})

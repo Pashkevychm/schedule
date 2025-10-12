@@ -17,15 +17,11 @@ header{
     background: rgb(255, 255, 255);
     border: 2px solid #000000;
     border-radius: 5px;
-    background-color: #bd7304;
-}
-.logo{
-    width: 47px;
-    height: 46px;  
+    background: linear-gradient(rgb(155, 62, 115), rgb(255, 153, 228));
 
 }
 .btn {
-    background-color:#0a0a23;
+    background: linear-gradient(rgb(181, 103, 241), rgb(255, 90, 211));
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -33,20 +29,20 @@ header{
     text-align: center;
     margin: 10px;
     cursor:pointer;
+    transition: background-color 5s ease;
 }
-.btn:hover {
-      background-color:#b9b600;
-      transition: 0.7s;
-  }
+.logo{
+    width: 47px;
+    height: 46px;  
+}
+
 
 .abc{
-    position: absolute;
-    width: 850px;
-    height: 550px;
-    display: flex;
-    right: 200px;
+    display:block;
+    width: 100%;
+    border-radius: 12px;
 
-    background: #A9A8A8;
+    background-image: url("https://i.pinimg.com/originals/fd/40/a4/fd40a4b8b151c4e432106576187d03c9.gif");
 }
 #tuesday, #wednesday, #thursday, #friday {
     display: none;
@@ -54,6 +50,11 @@ header{
 
 .container {
     display: flex;
+    height: 100vh;
+}
+
+.schedule {
+    max-width: 1200px;
 }
 
 .subjects {
@@ -121,4 +122,13 @@ header{
 
 .add-subject-btn:hover {
     opacity: 0.95;
+}
+input {
+    margin-top: 0.5rem;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: gray;
 }
