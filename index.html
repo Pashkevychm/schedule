@@ -10,9 +10,7 @@
 </head>
 
 <body>
-    <header>
-        <img class='logo' src='https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-ba70-61f7-b2e2-ecf302b28b8d/raw?se=2025-10-05T13%3A09%3A51Z&sp=r&sv=2024-08-04&sr=b&scid=68eb0a05-f715-546d-8e67-35e192f3c603&skoid=f71d6506-3cac-498e-b62a-67f9228033a9&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-05T10%3A02%3A33Z&ske=2025-10-06T10%3A02%3A33Z&sks=b&skv=2024-08-04&sig=1d/UPbxUhIeUVHYBrSScbH92oEaoSDKRvXodUTjIYI0%3D' alt='Тут має бути картинка'>
-    </header>
+
     <div class="container">
         <div class="buttons">
             <button class="btn" data-target="monday">Понеділок</button>
@@ -22,17 +20,14 @@
             <button class="btn" data-target="friday">П'ятниця</button>
         </div>
         <div class="abc" id="monday">
-            <h1>Понеділок</h1>
+            <h2>Понеділок</h2>
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn"> Додати предмет </button>
+                    <button class="add-subject-btn" data-subjects="monday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="monday-subjects">
-                    <div class="subject">
-                        <p>Предмет</p>
-                        <button class="delete-btn">Видалити</button>
-                    </div>
+                    <!-- тут будуть предмети -->
                 </div>
             </div>
         </div>
@@ -42,13 +37,10 @@
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn"> Додати предмет </button>
+                    <button class="add-subject-btn" data-subjects="tuesday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="tuesday-subjects">
-                    <div class="subject">
-                        <p>Предмет</p>
-                        <button class="delete-btn">Видалити</button>
-                    </div>
+                    <!-- тут будуть предмети -->
                 </div>
             </div>
         </div>
@@ -58,13 +50,10 @@
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn"> Додати предмет </button>
+                    <button class="add-subject-btn" data-subjects="wednesday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="wednesday-subjects">
-                    <div class="subject">
-                        <p>Предмет</p>
-                        <button class="delete-btn">Видалити</button>
-                    </div>
+                    <!-- тут будуть предмети -->
                 </div>
             </div>
         </div>
@@ -74,13 +63,10 @@
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn"> Додати предмет </button>
+                    <button class="add-subject-btn" data-subjects="thursday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="thursday-subjects">
-                    <div class="subject">
-                        <p>Предмет</p>
-                        <button class="delete-btn">Видалити</button>
-                    </div>
+                    <!-- тут будуть предмети -->
                 </div>
             </div>
         </div>
@@ -90,18 +76,14 @@
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn"> Додати предмет </button>
+                    <button class="add-subject-btn" data-subjects="friday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="friday-subjects">
-                    <div class="subject">
-                        <p>Предмет</p>
-                        <button class="delete-btn">Видалити</button>
-                    </div>
+                    <!-- тут будуть предмети -->
                 </div>
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
