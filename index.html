@@ -12,19 +12,19 @@
 <body>
 
     <div class="container">
-        <div class="buttons">
-            <button class="btn" data-target="monday">Понеділок</button>
-            <button class="btn" data-target="tuesday">Вівторок</button>
-            <button class="btn" data-target="wednesday">Середа</button>
-            <button class="btn" data-target="thursday">Четвер</button>
-            <button class="btn" data-target="friday">П'ятниця</button>
+        <div class="frame">
+    <button class="custom-btn btn-8"><span>Понеділок</span></button>
+    <button class="custom-btn btn-8"><span>Вівторок</span></button>
+    <button class="custom-btn btn-8"><span>Середа</span></button>
+    <button class="custom-btn btn-8"><span>Четвер</span></button>
+    <button class="custom-btn btn-8"><span>П'ятниця</span></button>
         </div>
         <div class="abc" id="monday">
             <h2>Понеділок</h2>
             <div class="schedule">
                 <div class="add-subject">
                     <input type="text" placeholder="Предмет">
-                    <button class="add-subject-btn" data-subjects="monday-subjects"> Додати предмет </button>
+                    <button class="add-subject-btn custom-btn btn-8" data-subjects="monday-subjects"> Додати предмет </button>
                 </div>
                 <div class="subjects" id="monday-subjects">
                     <!-- тут будуть предмети -->
@@ -70,6 +70,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="abc" id="friday">
             <h2>П'ятниця</h2>
